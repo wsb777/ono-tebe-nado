@@ -1,9 +1,6 @@
 html {
     scroll-behavior:smooth;
 }
-body {
-    margin: 0;
-}
 header {
     display:flex;
     flex-direction: row;
@@ -39,6 +36,10 @@ li {
     position: absolute;
     left:45%;
 }
+.link_logo {
+    width: 148px;
+    height: 105px;
+}
 header .contacts {
     width: 240px;
     color: #000;
@@ -49,7 +50,7 @@ header .contacts {
     line-height: 24.3px;
     float:right;
 }
-.phoneNumber, .email, .adress{
+.phoneNumber, .email, .adress {
     margin:5px;
 }
 .picture {

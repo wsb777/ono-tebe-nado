@@ -249,7 +249,7 @@ footer .contacts {
 footer nav {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 .socialContacts {
     margin-right:50px;

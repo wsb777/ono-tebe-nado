@@ -3,7 +3,7 @@ html {
 }
 header {
     display: grid;
-    grid-template-columns: 1.76fr 1.45fr 0.1fr;
+    grid-template-columns: 1.75fr 1.45fr 0.1fr;
     margin: 92px 45px 89px 51px;
 }
 .header-menu {
@@ -20,8 +20,8 @@ ul {
 li {
     list-style-type: circle;
 }
-.link_active.menu-link {
-    list-style-type: circle;
+.no-circle {
+    list-style: none;
 }
 .menu-link {
     color: #000;
@@ -287,4 +287,5 @@ footer nav {
 }
 .link.link-active {
     text-decoration: underline;
+    text-decoration-thickness: 0.5px;
 }

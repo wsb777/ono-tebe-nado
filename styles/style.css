@@ -1,51 +1,59 @@
 html {
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
 }
 header {
     display: grid;
-    grid-template-columns: 600px auto 245px;
-    margin: 92px 49px 92px 51px;
+    grid-template-columns: 1.76fr 1.45fr 0.1fr;
+    margin: 92px 45px 89px 51px;
 }
 .header-menu {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
 ul {
     display: grid;
     grid-template-columns: 99px 180px 150px;
-    list-style: circle;
     text-underline-offset: 4px;
+}
+li {
+    list-style-type: circle;
+}
+.link_active.menu-link {
+    list-style-type: circle;
 }
 .menu-link {
     color: #000;
-    font-family: 'Lucida Console', Monaco, monospace;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-}
-.menu-link.one {
-    text-decoration: none;
 }
 .link_logo {
     width: 138px;
     min-height: 105px;
 }
 header .contacts {
-    width: 260px;
+    width: 246.8px;
     color: #000;
-    font-family: 'Lucida Console', Monaco, monospace;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 24.3px;
 }
-.phoneNumber, .email, .adress {
+.contacts_place_header {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end; 
+}
+.phone-number, .email, .adress {
     text-underline-offset: 4px;
-    margin:5px;
+}
+.phone-number {
+    margin-top: 5px;
 }
 .picture {
     z-index: -1;
@@ -57,12 +65,11 @@ header .contacts {
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
 }
-.textOTN {
+.section-text-cover {
     display: flex;
     flex-direction: column;
     color: #FFF;
-    font-family: 'Lucida Console', Monaco, monospace;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-size: 100px;
     font-style: normal;
     font-weight: 700;
@@ -74,43 +81,41 @@ header .contacts {
     margin:10px;
 }
 .cover-text span {
-    letter-spacing: 60px;;
+    letter-spacing: 60px;
 }
-
-.ono {
+.first-word {
     text-align: left;
     padding-left:40px;
-    margin-top:165px;
+    margin-top:167px;
 }
-.tebe {
+.second-word {
     text-align: center;
     margin:0;
+    margin-top:2px;
 }
-.nado {
+.third-word {
     text-align: right;
     padding-right:10px;
     margin-top:5px;
 }
-.textAndButton {
+.text-button {
     display: flex;
     justify-content: right;
     align-items: center;
     color: #FFF;
-    font-family: 'Lucida Console', Monaco, monospace;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: 28px; /* 127.273% */
     text-transform: uppercase;
-    margin-top:120px;
+    margin-top:118px;
     margin-bottom: 50px;
     padding-right:50px
 }
-.textAndButton button {
+.text-button button {
     color: #FFF;
-    font-family: 'Lucida Console', Monaco, monospace;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -120,8 +125,11 @@ header .contacts {
     background:none;
     padding: 12px 32px;
 }
-.textAndButton p {
+.text-button p {
     padding-right:78px;
+    word-spacing: 17px;
+}
+.text-button p span {
     word-spacing: 20px;
 }
 .lots {
@@ -131,8 +139,7 @@ header .contacts {
 }
 .lots h2 {
     color: #000;
-    font-family: 'Lucida Console', Monaco, monospace;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -158,20 +165,19 @@ header .contacts {
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
 }
-.card_type_film {
+.card-type-film {
     background-image: url(../images/card-lot-01.jpg)
 }
-.card_type_book {
+.card-type-book {
     background-image: url(../images/card-lot-02.jpg);
 }
-.card_type_picture {
+.card-type-picture {
     background-image: url(../images/card-lot-03.jpg);
 }
 .card h3 {
     margin: 50px 40px 0;
     color: #FFF;
-    font-family: 'Lucida Console', Monaco, monospace;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -183,25 +189,22 @@ header .contacts {
     list-style: none;
     margin: 0 40px 50px;
     color: #FFF;
-    font-family: 'Lucida Console', Monaco, monospace;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
-    padding-left: -20px;
+    
 }
 .more {
     margin-left:40px;
     color: #000;
-    font-family: 'Lucida Console', Monaco, monospace;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-underline-offset: 4px;
-
 }
 .about {
     display: flex;
@@ -212,8 +215,8 @@ header .contacts {
     justify-content: center;
     align-items: center;
     margin-left: 145px;
-    width: 1150px;
-    height: 240px;
+    width: 240px;
+    height:240px;
     background: black;
     border-radius: 50%;
 }
@@ -221,36 +224,32 @@ header .contacts {
     width: 148px;
     height: 114px;
 }
-.aboutText {
+.about-text {
     display: flex;
     flex-direction: column;
-    margin:100px 50px 0 115px;
+    margin:100px 50px 0 120px;
 }
-.aboutText h2 {
+.about-text h2 {
     color: #000;
-    font-family: 'Lucida Console', Monaco, monospace;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
+    margin-bottom: 100px;
 }
 .paragraph {
     color: #000;
-    font-family: 'Lucida Console', Monaco, monospace;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
-}
-.firstP {
-    margin-top:100px;
+    line-height: 24px;
     margin-bottom: 25px;
 }
 footer {
-    margin-top:180px;
+    margin-top:155px;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -262,32 +261,31 @@ footer .contacts {
     width: 240px;
     min-height: 97px;
     color: #000;
-    font-family: 'Lucida Console', Monaco, monospace;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 24.3px;
 }
-.link.phoneNumber {
-    margin-left: -1px;
-}
-.link.email {
-    margin-left: -1px;
-}
+footer .menu-link.two{
+    margin-top:1px;
+} 
 footer nav {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.socialContacts {
+.social-contacts {
     display: grid;
     grid-template-columns: auto auto auto 2px;
     gap:48px;
 }
-.socialContacts img {
+.social-contacts img {
     width:48px;
 }
-.link-none-style {
- list-style: none;
+.link {
+    text-decoration: none;
+}
+.link.link-active {
+    text-decoration: underline;
 }

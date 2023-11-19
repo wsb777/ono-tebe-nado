@@ -150,14 +150,13 @@ header .contacts {
 }
 .cards {
     display: grid;
-    grid-template-columns: auto auto auto;
-    gap:20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:25px;
     margin-bottom: 30px;
 }
 .card {
     display: flex;
     flex-direction: column;
-    width:430px;
     min-height: 450px;
     background-size: cover;
     background-repeat: no-repeat;
